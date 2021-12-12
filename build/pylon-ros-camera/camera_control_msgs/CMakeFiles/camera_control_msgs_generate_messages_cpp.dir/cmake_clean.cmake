@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "/home/pibot/catkin_ws/devel/include/camera_control_msgs/GetCamProperties.h"
+  "/home/pibot/catkin_ws/devel/include/camera_control_msgs/GrabAndSaveImageAction.h"
+  "/home/pibot/catkin_ws/devel/include/camera_control_msgs/GrabAndSaveImageActionFeedback.h"
+  "/home/pibot/catkin_ws/devel/include/camera_control_msgs/GrabAndSaveImageActionGoal.h"
+  "/home/pibot/catkin_ws/devel/include/camera_control_msgs/GrabAndSaveImageActionResult.h"
+  "/home/pibot/catkin_ws/devel/include/camera_control_msgs/GrabAndSaveImageFeedback.h"
+  "/home/pibot/catkin_ws/devel/include/camera_control_msgs/GrabAndSaveImageGoal.h"
+  "/home/pibot/catkin_ws/devel/include/camera_control_msgs/GrabAndSaveImageResult.h"
+  "/home/pibot/catkin_ws/devel/include/camera_control_msgs/GrabHDRImageAction.h"
+  "/home/pibot/catkin_ws/devel/include/camera_control_msgs/GrabHDRImageActionFeedback.h"
+  "/home/pibot/catkin_ws/devel/include/camera_control_msgs/GrabHDRImageActionGoal.h"
+  "/home/pibot/catkin_ws/devel/include/camera_control_msgs/GrabHDRImageActionResult.h"
+  "/home/pibot/catkin_ws/devel/include/camera_control_msgs/GrabHDRImageFeedback.h"
+  "/home/pibot/catkin_ws/devel/include/camera_control_msgs/GrabHDRImageGoal.h"
+  "/home/pibot/catkin_ws/devel/include/camera_control_msgs/GrabHDRImageResult.h"
+  "/home/pibot/catkin_ws/devel/include/camera_control_msgs/GrabImagesAction.h"
+  "/home/pibot/catkin_ws/devel/include/camera_control_msgs/GrabImagesActionFeedback.h"
+  "/home/pibot/catkin_ws/devel/include/camera_control_msgs/GrabImagesActionGoal.h"
+  "/home/pibot/catkin_ws/devel/include/camera_control_msgs/GrabImagesActionResult.h"
+  "/home/pibot/catkin_ws/devel/include/camera_control_msgs/GrabImagesFeedback.h"
+  "/home/pibot/catkin_ws/devel/include/camera_control_msgs/GrabImagesGoal.h"
+  "/home/pibot/catkin_ws/devel/include/camera_control_msgs/GrabImagesResult.h"
+  "/home/pibot/catkin_ws/devel/include/camera_control_msgs/SetBinning.h"
+  "/home/pibot/catkin_ws/devel/include/camera_control_msgs/SetBrightness.h"
+  "/home/pibot/catkin_ws/devel/include/camera_control_msgs/SetExposure.h"
+  "/home/pibot/catkin_ws/devel/include/camera_control_msgs/SetFloatValue.h"
+  "/home/pibot/catkin_ws/devel/include/camera_control_msgs/SetGain.h"
+  "/home/pibot/catkin_ws/devel/include/camera_control_msgs/SetGamma.h"
+  "/home/pibot/catkin_ws/devel/include/camera_control_msgs/SetIntegerValue.h"
+  "/home/pibot/catkin_ws/devel/include/camera_control_msgs/SetROI.h"
+  "/home/pibot/catkin_ws/devel/include/camera_control_msgs/SetSleeping.h"
+  "/home/pibot/catkin_ws/devel/include/camera_control_msgs/SetStringValue.h"
+  "/home/pibot/catkin_ws/devel/include/camera_control_msgs/currentParams.h"
+  "CMakeFiles/camera_control_msgs_generate_messages_cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang )
+  include(CMakeFiles/camera_control_msgs_generate_messages_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

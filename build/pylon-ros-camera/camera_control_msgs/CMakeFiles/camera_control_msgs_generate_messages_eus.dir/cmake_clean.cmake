@@ -1,0 +1,42 @@
+file(REMOVE_RECURSE
+  "/home/pibot/catkin_ws/devel/share/roseus/ros/camera_control_msgs/manifest.l"
+  "/home/pibot/catkin_ws/devel/share/roseus/ros/camera_control_msgs/msg/GrabAndSaveImageAction.l"
+  "/home/pibot/catkin_ws/devel/share/roseus/ros/camera_control_msgs/msg/GrabAndSaveImageActionFeedback.l"
+  "/home/pibot/catkin_ws/devel/share/roseus/ros/camera_control_msgs/msg/GrabAndSaveImageActionGoal.l"
+  "/home/pibot/catkin_ws/devel/share/roseus/ros/camera_control_msgs/msg/GrabAndSaveImageActionResult.l"
+  "/home/pibot/catkin_ws/devel/share/roseus/ros/camera_control_msgs/msg/GrabAndSaveImageFeedback.l"
+  "/home/pibot/catkin_ws/devel/share/roseus/ros/camera_control_msgs/msg/GrabAndSaveImageGoal.l"
+  "/home/pibot/catkin_ws/devel/share/roseus/ros/camera_control_msgs/msg/GrabAndSaveImageResult.l"
+  "/home/pibot/catkin_ws/devel/share/roseus/ros/camera_control_msgs/msg/GrabHDRImageAction.l"
+  "/home/pibot/catkin_ws/devel/share/roseus/ros/camera_control_msgs/msg/GrabHDRImageActionFeedback.l"
+  "/home/pibot/catkin_ws/devel/share/roseus/ros/camera_control_msgs/msg/GrabHDRImageActionGoal.l"
+  "/home/pibot/catkin_ws/devel/share/roseus/ros/camera_control_msgs/msg/GrabHDRImageActionResult.l"
+  "/home/pibot/catkin_ws/devel/share/roseus/ros/camera_control_msgs/msg/GrabHDRImageFeedback.l"
+  "/home/pibot/catkin_ws/devel/share/roseus/ros/camera_control_msgs/msg/GrabHDRImageGoal.l"
+  "/home/pibot/catkin_ws/devel/share/roseus/ros/camera_control_msgs/msg/GrabHDRImageResult.l"
+  "/home/pibot/catkin_ws/devel/share/roseus/ros/camera_control_msgs/msg/GrabImagesAction.l"
+  "/home/pibot/catkin_ws/devel/share/roseus/ros/camera_control_msgs/msg/GrabImagesActionFeedback.l"
+  "/home/pibot/catkin_ws/devel/share/roseus/ros/camera_control_msgs/msg/GrabImagesActionGoal.l"
+  "/home/pibot/catkin_ws/devel/share/roseus/ros/camera_control_msgs/msg/GrabImagesActionResult.l"
+  "/home/pibot/catkin_ws/devel/share/roseus/ros/camera_control_msgs/msg/GrabImagesFeedback.l"
+  "/home/pibot/catkin_ws/devel/share/roseus/ros/camera_control_msgs/msg/GrabImagesGoal.l"
+  "/home/pibot/catkin_ws/devel/share/roseus/ros/camera_control_msgs/msg/GrabImagesResult.l"
+  "/home/pibot/catkin_ws/devel/share/roseus/ros/camera_control_msgs/msg/currentParams.l"
+  "/home/pibot/catkin_ws/devel/share/roseus/ros/camera_control_msgs/srv/GetCamProperties.l"
+  "/home/pibot/catkin_ws/devel/share/roseus/ros/camera_control_msgs/srv/SetBinning.l"
+  "/home/pibot/catkin_ws/devel/share/roseus/ros/camera_control_msgs/srv/SetBrightness.l"
+  "/home/pibot/catkin_ws/devel/share/roseus/ros/camera_control_msgs/srv/SetExposure.l"
+  "/home/pibot/catkin_ws/devel/share/roseus/ros/camera_control_msgs/srv/SetFloatValue.l"
+  "/home/pibot/catkin_ws/devel/share/roseus/ros/camera_control_msgs/srv/SetGain.l"
+  "/home/pibot/catkin_ws/devel/share/roseus/ros/camera_control_msgs/srv/SetGamma.l"
+  "/home/pibot/catkin_ws/devel/share/roseus/ros/camera_control_msgs/srv/SetIntegerValue.l"
+  "/home/pibot/catkin_ws/devel/share/roseus/ros/camera_control_msgs/srv/SetROI.l"
+  "/home/pibot/catkin_ws/devel/share/roseus/ros/camera_control_msgs/srv/SetSleeping.l"
+  "/home/pibot/catkin_ws/devel/share/roseus/ros/camera_control_msgs/srv/SetStringValue.l"
+  "CMakeFiles/camera_control_msgs_generate_messages_eus"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang )
+  include(CMakeFiles/camera_control_msgs_generate_messages_eus.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

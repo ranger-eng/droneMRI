@@ -1,0 +1,11 @@
+<launch>
+    <!-- IG1 Sensor node -->
+    <remap from="/imu" to="/Zen_imu"/>
+    <node name="IG1_node" pkg="openzen_sensor" type="openzen_sensor_node"/>
+    
+
+    <!-- Quaternion to Euler conversion node -->
+    <node name="Zen_Quat_To_Euler" pkg="topic_tools" type="transform"
+        args="/Zen_imu/data/orientation /Zen_RPY geometry_msgs/Vector3 'tf.transformations.euler_from_quaternion([m.x, m.y, m.z, m.w])' --import tf" />
+
+</launch>

@@ -1,0 +1,2 @@
+JRT_M88B_ros/distance_sensor:adi_driver:dragandbot_common/dnb_msgs:imu_tools/imu_complementary_filter:imu_tools/imu_filter_madgwick:imu_tools/imu_tools:imu_tools/rviz_imu_plugin:openzenros:pylon-ros-camera/camera_control_msgs:pylon-ros-camera/pylon_camera
+-DCATKIN_DEVEL_PREFIX=/home/pibot/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/pibot/catkin_ws/install -G Unix Makefiles

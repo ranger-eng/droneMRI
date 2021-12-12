@@ -1,0 +1,8 @@
+prefix=/home/pibot/catkin_ws/devel
+
+Name: openzen_sensor
+Description: Description of openzen_sensor
+Version: 1.2.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

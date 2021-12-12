@@ -1,0 +1,21 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/pibot/catkin_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/pibot/catkin_ws/src/adi_driver/include/**",
+        "/home/pibot/catkin_ws/src/imu_tools/imu_complementary_filter/include/**",
+        "/home/pibot/catkin_ws/src/imu_tools/imu_filter_madgwick/include/**",
+        "/home/pibot/catkin_ws/src/pylon-ros-camera/pylon_camera/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}
