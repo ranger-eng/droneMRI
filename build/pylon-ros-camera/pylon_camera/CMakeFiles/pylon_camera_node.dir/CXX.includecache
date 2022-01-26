@@ -1061,11 +1061,9 @@ ros/macros.h
 /opt/ros/noetic/include/image_geometry/pinhole_camera_model.h
 sensor_msgs/CameraInfo.h
 -
-opencv2/core/core.hpp
+opencv2/core/mat.hpp
 -
 opencv2/imgproc/imgproc.hpp
--
-opencv2/calib3d/calib3d.hpp
 -
 stdexcept
 -
@@ -2243,10 +2241,6 @@ opencv2/features2d.hpp
 /usr/include/opencv4/opencv2/opencv2/features2d.hpp
 opencv2/core/affine.hpp
 /usr/include/opencv4/opencv2/opencv2/core/affine.hpp
-
-/usr/include/opencv4/opencv2/calib3d/calib3d.hpp
-opencv2/calib3d.hpp
-/usr/include/opencv4/opencv2/calib3d/opencv2/calib3d.hpp
 
 /usr/include/opencv4/opencv2/core.hpp
 opencv2/core/cvdef.h

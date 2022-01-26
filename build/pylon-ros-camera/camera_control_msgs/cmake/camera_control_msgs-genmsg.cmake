@@ -24,7 +24,7 @@ add_custom_target(_camera_control_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageAction.msg" NAME_WE)
 add_custom_target(_camera_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "camera_control_msgs" "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageAction.msg" "camera_control_msgs/GrabAndSaveImageResult:camera_control_msgs/GrabAndSaveImageFeedback:camera_control_msgs/GrabAndSaveImageActionResult:std_msgs/Header:actionlib_msgs/GoalID:camera_control_msgs/GrabAndSaveImageActionFeedback:camera_control_msgs/GrabAndSaveImageGoal:camera_control_msgs/GrabAndSaveImageActionGoal:actionlib_msgs/GoalStatus"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "camera_control_msgs" "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageAction.msg" "actionlib_msgs/GoalStatus:camera_control_msgs/GrabAndSaveImageGoal:std_msgs/Header:camera_control_msgs/GrabAndSaveImageResult:actionlib_msgs/GoalID:camera_control_msgs/GrabAndSaveImageActionResult:camera_control_msgs/GrabAndSaveImageActionFeedback:camera_control_msgs/GrabAndSaveImageFeedback:camera_control_msgs/GrabAndSaveImageActionGoal"
 )
 
 get_filename_component(_filename "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionGoal.msg" NAME_WE)
@@ -34,12 +34,12 @@ add_custom_target(_camera_control_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionResult.msg" NAME_WE)
 add_custom_target(_camera_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "camera_control_msgs" "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionResult.msg" "std_msgs/Header:camera_control_msgs/GrabAndSaveImageResult:actionlib_msgs/GoalID:actionlib_msgs/GoalStatus"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "camera_control_msgs" "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionResult.msg" "camera_control_msgs/GrabAndSaveImageResult:std_msgs/Header:actionlib_msgs/GoalStatus:actionlib_msgs/GoalID"
 )
 
 get_filename_component(_filename "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionFeedback.msg" NAME_WE)
 add_custom_target(_camera_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "camera_control_msgs" "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionFeedback.msg" "std_msgs/Header:actionlib_msgs/GoalID:camera_control_msgs/GrabAndSaveImageFeedback:actionlib_msgs/GoalStatus"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "camera_control_msgs" "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionFeedback.msg" "std_msgs/Header:camera_control_msgs/GrabAndSaveImageFeedback:actionlib_msgs/GoalStatus:actionlib_msgs/GoalID"
 )
 
 get_filename_component(_filename "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageGoal.msg" NAME_WE)
@@ -59,7 +59,7 @@ add_custom_target(_camera_control_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageAction.msg" NAME_WE)
 add_custom_target(_camera_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "camera_control_msgs" "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageAction.msg" "camera_control_msgs/GrabHDRImageFeedback:camera_control_msgs/GrabHDRImageActionFeedback:sensor_msgs/RegionOfInterest:std_msgs/Header:camera_control_msgs/GrabHDRImageActionGoal:camera_control_msgs/GrabHDRImageGoal:camera_control_msgs/GrabHDRImageResult:sensor_msgs/Image:actionlib_msgs/GoalID:sensor_msgs/CameraInfo:camera_control_msgs/GrabHDRImageActionResult:actionlib_msgs/GoalStatus"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "camera_control_msgs" "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageAction.msg" "sensor_msgs/RegionOfInterest:std_msgs/Header:camera_control_msgs/GrabHDRImageGoal:camera_control_msgs/GrabHDRImageActionResult:actionlib_msgs/GoalID:camera_control_msgs/GrabHDRImageActionGoal:camera_control_msgs/GrabHDRImageActionFeedback:sensor_msgs/Image:camera_control_msgs/GrabHDRImageResult:actionlib_msgs/GoalStatus:sensor_msgs/CameraInfo:camera_control_msgs/GrabHDRImageFeedback"
 )
 
 get_filename_component(_filename "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionGoal.msg" NAME_WE)
@@ -69,12 +69,12 @@ add_custom_target(_camera_control_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionResult.msg" NAME_WE)
 add_custom_target(_camera_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "camera_control_msgs" "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionResult.msg" "sensor_msgs/RegionOfInterest:std_msgs/Header:camera_control_msgs/GrabHDRImageResult:sensor_msgs/Image:sensor_msgs/CameraInfo:actionlib_msgs/GoalID:actionlib_msgs/GoalStatus"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "camera_control_msgs" "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionResult.msg" "sensor_msgs/RegionOfInterest:std_msgs/Header:actionlib_msgs/GoalID:sensor_msgs/Image:camera_control_msgs/GrabHDRImageResult:actionlib_msgs/GoalStatus:sensor_msgs/CameraInfo"
 )
 
 get_filename_component(_filename "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionFeedback.msg" NAME_WE)
 add_custom_target(_camera_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "camera_control_msgs" "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionFeedback.msg" "std_msgs/Header:actionlib_msgs/GoalID:camera_control_msgs/GrabHDRImageFeedback:actionlib_msgs/GoalStatus"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "camera_control_msgs" "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionFeedback.msg" "camera_control_msgs/GrabHDRImageFeedback:std_msgs/Header:actionlib_msgs/GoalStatus:actionlib_msgs/GoalID"
 )
 
 get_filename_component(_filename "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageGoal.msg" NAME_WE)
@@ -84,7 +84,7 @@ add_custom_target(_camera_control_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageResult.msg" NAME_WE)
 add_custom_target(_camera_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "camera_control_msgs" "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageResult.msg" "sensor_msgs/RegionOfInterest:std_msgs/Header:sensor_msgs/CameraInfo:sensor_msgs/Image"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "camera_control_msgs" "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageResult.msg" "std_msgs/Header:sensor_msgs/RegionOfInterest:sensor_msgs/Image:sensor_msgs/CameraInfo"
 )
 
 get_filename_component(_filename "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageFeedback.msg" NAME_WE)
@@ -94,7 +94,7 @@ add_custom_target(_camera_control_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesAction.msg" NAME_WE)
 add_custom_target(_camera_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "camera_control_msgs" "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesAction.msg" "camera_control_msgs/GrabImagesActionResult:sensor_msgs/RegionOfInterest:std_msgs/Header:camera_control_msgs/GrabImagesGoal:camera_control_msgs/GrabImagesResult:sensor_msgs/Image:sensor_msgs/CameraInfo:actionlib_msgs/GoalID:camera_control_msgs/GrabImagesActionGoal:camera_control_msgs/GrabImagesActionFeedback:camera_control_msgs/GrabImagesFeedback:actionlib_msgs/GoalStatus"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "camera_control_msgs" "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesAction.msg" "camera_control_msgs/GrabImagesGoal:sensor_msgs/RegionOfInterest:std_msgs/Header:camera_control_msgs/GrabImagesActionGoal:camera_control_msgs/GrabImagesActionResult:actionlib_msgs/GoalID:sensor_msgs/Image:camera_control_msgs/GrabImagesActionFeedback:camera_control_msgs/GrabImagesFeedback:actionlib_msgs/GoalStatus:sensor_msgs/CameraInfo:camera_control_msgs/GrabImagesResult"
 )
 
 get_filename_component(_filename "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionGoal.msg" NAME_WE)
@@ -104,12 +104,12 @@ add_custom_target(_camera_control_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionResult.msg" NAME_WE)
 add_custom_target(_camera_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "camera_control_msgs" "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionResult.msg" "sensor_msgs/RegionOfInterest:std_msgs/Header:sensor_msgs/CameraInfo:sensor_msgs/Image:actionlib_msgs/GoalID:camera_control_msgs/GrabImagesResult:actionlib_msgs/GoalStatus"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "camera_control_msgs" "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionResult.msg" "sensor_msgs/RegionOfInterest:std_msgs/Header:actionlib_msgs/GoalID:sensor_msgs/Image:actionlib_msgs/GoalStatus:sensor_msgs/CameraInfo:camera_control_msgs/GrabImagesResult"
 )
 
 get_filename_component(_filename "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionFeedback.msg" NAME_WE)
 add_custom_target(_camera_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "camera_control_msgs" "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionFeedback.msg" "std_msgs/Header:actionlib_msgs/GoalID:camera_control_msgs/GrabImagesFeedback:actionlib_msgs/GoalStatus"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "camera_control_msgs" "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionFeedback.msg" "std_msgs/Header:camera_control_msgs/GrabImagesFeedback:actionlib_msgs/GoalStatus:actionlib_msgs/GoalID"
 )
 
 get_filename_component(_filename "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesGoal.msg" NAME_WE)
@@ -119,7 +119,7 @@ add_custom_target(_camera_control_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesResult.msg" NAME_WE)
 add_custom_target(_camera_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "camera_control_msgs" "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesResult.msg" "sensor_msgs/RegionOfInterest:std_msgs/Header:sensor_msgs/CameraInfo:sensor_msgs/Image"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "camera_control_msgs" "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesResult.msg" "std_msgs/Header:sensor_msgs/RegionOfInterest:sensor_msgs/Image:sensor_msgs/CameraInfo"
 )
 
 get_filename_component(_filename "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesFeedback.msg" NAME_WE)
@@ -197,7 +197,7 @@ _generate_msg_cpp(camera_control_msgs
 _generate_msg_cpp(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageResult.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageFeedback.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionFeedback.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageGoal.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionResult.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionFeedback.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageFeedback.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_cpp(camera_control_msgs
@@ -209,13 +209,13 @@ _generate_msg_cpp(camera_control_msgs
 _generate_msg_cpp(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_cpp(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_cpp(camera_control_msgs
@@ -239,7 +239,7 @@ _generate_msg_cpp(camera_control_msgs
 _generate_msg_cpp(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageFeedback.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionFeedback.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionGoal.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageGoal.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageResult.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageGoal.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionGoal.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionFeedback.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_cpp(camera_control_msgs
@@ -251,13 +251,13 @@ _generate_msg_cpp(camera_control_msgs
 _generate_msg_cpp(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageResult.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_cpp(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_cpp(camera_control_msgs
@@ -269,7 +269,7 @@ _generate_msg_cpp(camera_control_msgs
 _generate_msg_cpp(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_cpp(camera_control_msgs
@@ -281,7 +281,7 @@ _generate_msg_cpp(camera_control_msgs
 _generate_msg_cpp(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionResult.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesGoal.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesResult.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionGoal.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionFeedback.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesGoal.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionGoal.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionFeedback.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_cpp(camera_control_msgs
@@ -293,13 +293,13 @@ _generate_msg_cpp(camera_control_msgs
 _generate_msg_cpp(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_cpp(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_cpp(camera_control_msgs
@@ -311,7 +311,7 @@ _generate_msg_cpp(camera_control_msgs
 _generate_msg_cpp(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_cpp(camera_control_msgs
@@ -486,7 +486,7 @@ _generate_msg_eus(camera_control_msgs
 _generate_msg_eus(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageResult.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageFeedback.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionFeedback.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageGoal.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionResult.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionFeedback.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageFeedback.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_eus(camera_control_msgs
@@ -498,13 +498,13 @@ _generate_msg_eus(camera_control_msgs
 _generate_msg_eus(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_eus(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_eus(camera_control_msgs
@@ -528,7 +528,7 @@ _generate_msg_eus(camera_control_msgs
 _generate_msg_eus(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageFeedback.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionFeedback.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionGoal.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageGoal.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageResult.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageGoal.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionGoal.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionFeedback.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_eus(camera_control_msgs
@@ -540,13 +540,13 @@ _generate_msg_eus(camera_control_msgs
 _generate_msg_eus(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageResult.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_eus(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_eus(camera_control_msgs
@@ -558,7 +558,7 @@ _generate_msg_eus(camera_control_msgs
 _generate_msg_eus(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_eus(camera_control_msgs
@@ -570,7 +570,7 @@ _generate_msg_eus(camera_control_msgs
 _generate_msg_eus(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionResult.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesGoal.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesResult.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionGoal.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionFeedback.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesGoal.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionGoal.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionFeedback.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_eus(camera_control_msgs
@@ -582,13 +582,13 @@ _generate_msg_eus(camera_control_msgs
 _generate_msg_eus(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_eus(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_eus(camera_control_msgs
@@ -600,7 +600,7 @@ _generate_msg_eus(camera_control_msgs
 _generate_msg_eus(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_eus(camera_control_msgs
@@ -775,7 +775,7 @@ _generate_msg_lisp(camera_control_msgs
 _generate_msg_lisp(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageResult.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageFeedback.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionFeedback.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageGoal.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionResult.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionFeedback.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageFeedback.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_lisp(camera_control_msgs
@@ -787,13 +787,13 @@ _generate_msg_lisp(camera_control_msgs
 _generate_msg_lisp(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_lisp(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_lisp(camera_control_msgs
@@ -817,7 +817,7 @@ _generate_msg_lisp(camera_control_msgs
 _generate_msg_lisp(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageFeedback.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionFeedback.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionGoal.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageGoal.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageResult.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageGoal.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionGoal.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionFeedback.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_lisp(camera_control_msgs
@@ -829,13 +829,13 @@ _generate_msg_lisp(camera_control_msgs
 _generate_msg_lisp(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageResult.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_lisp(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_lisp(camera_control_msgs
@@ -847,7 +847,7 @@ _generate_msg_lisp(camera_control_msgs
 _generate_msg_lisp(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_lisp(camera_control_msgs
@@ -859,7 +859,7 @@ _generate_msg_lisp(camera_control_msgs
 _generate_msg_lisp(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionResult.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesGoal.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesResult.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionGoal.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionFeedback.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesGoal.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionGoal.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionFeedback.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_lisp(camera_control_msgs
@@ -871,13 +871,13 @@ _generate_msg_lisp(camera_control_msgs
 _generate_msg_lisp(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_lisp(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_lisp(camera_control_msgs
@@ -889,7 +889,7 @@ _generate_msg_lisp(camera_control_msgs
 _generate_msg_lisp(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_lisp(camera_control_msgs
@@ -1064,7 +1064,7 @@ _generate_msg_nodejs(camera_control_msgs
 _generate_msg_nodejs(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageResult.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageFeedback.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionFeedback.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageGoal.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionResult.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionFeedback.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageFeedback.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_nodejs(camera_control_msgs
@@ -1076,13 +1076,13 @@ _generate_msg_nodejs(camera_control_msgs
 _generate_msg_nodejs(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_nodejs(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_nodejs(camera_control_msgs
@@ -1106,7 +1106,7 @@ _generate_msg_nodejs(camera_control_msgs
 _generate_msg_nodejs(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageFeedback.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionFeedback.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionGoal.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageGoal.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageResult.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageGoal.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionGoal.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionFeedback.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_nodejs(camera_control_msgs
@@ -1118,13 +1118,13 @@ _generate_msg_nodejs(camera_control_msgs
 _generate_msg_nodejs(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageResult.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_nodejs(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_nodejs(camera_control_msgs
@@ -1136,7 +1136,7 @@ _generate_msg_nodejs(camera_control_msgs
 _generate_msg_nodejs(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_nodejs(camera_control_msgs
@@ -1148,7 +1148,7 @@ _generate_msg_nodejs(camera_control_msgs
 _generate_msg_nodejs(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionResult.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesGoal.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesResult.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionGoal.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionFeedback.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesGoal.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionGoal.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionFeedback.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_nodejs(camera_control_msgs
@@ -1160,13 +1160,13 @@ _generate_msg_nodejs(camera_control_msgs
 _generate_msg_nodejs(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_nodejs(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_nodejs(camera_control_msgs
@@ -1178,7 +1178,7 @@ _generate_msg_nodejs(camera_control_msgs
 _generate_msg_nodejs(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_nodejs(camera_control_msgs
@@ -1353,7 +1353,7 @@ _generate_msg_py(camera_control_msgs
 _generate_msg_py(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageResult.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageFeedback.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionFeedback.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageGoal.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionResult.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionFeedback.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageFeedback.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_py(camera_control_msgs
@@ -1365,13 +1365,13 @@ _generate_msg_py(camera_control_msgs
 _generate_msg_py(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_py(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabAndSaveImageFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_py(camera_control_msgs
@@ -1395,7 +1395,7 @@ _generate_msg_py(camera_control_msgs
 _generate_msg_py(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageFeedback.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionFeedback.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionGoal.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageGoal.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageResult.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageGoal.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionGoal.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionFeedback.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_py(camera_control_msgs
@@ -1407,13 +1407,13 @@ _generate_msg_py(camera_control_msgs
 _generate_msg_py(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageResult.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_py(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_py(camera_control_msgs
@@ -1425,7 +1425,7 @@ _generate_msg_py(camera_control_msgs
 _generate_msg_py(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabHDRImageResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_py(camera_control_msgs
@@ -1437,7 +1437,7 @@ _generate_msg_py(camera_control_msgs
 _generate_msg_py(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionResult.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesGoal.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesResult.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionGoal.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionFeedback.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesGoal.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionGoal.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionFeedback.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_py(camera_control_msgs
@@ -1449,13 +1449,13 @@ _generate_msg_py(camera_control_msgs
 _generate_msg_py(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_py(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_py(camera_control_msgs
@@ -1467,7 +1467,7 @@ _generate_msg_py(camera_control_msgs
 _generate_msg_py(camera_control_msgs
   "/home/pibot/catkin_ws/devel/share/camera_control_msgs/msg/GrabImagesResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/camera_control_msgs
 )
 _generate_msg_py(camera_control_msgs

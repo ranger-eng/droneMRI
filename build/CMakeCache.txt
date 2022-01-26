@@ -582,6 +582,12 @@ adi_driver_BINARY_DIR:STATIC=/home/pibot/catkin_ws/build/adi_driver
 //Value Computed by CMake
 adi_driver_SOURCE_DIR:STATIC=/home/pibot/catkin_ws/src/adi_driver
 
+//Value Computed by CMake
+beginner_tutorials_BINARY_DIR:STATIC=/home/pibot/catkin_ws/build/beginner_tutorials
+
+//Value Computed by CMake
+beginner_tutorials_SOURCE_DIR:STATIC=/home/pibot/catkin_ws/src/beginner_tutorials
+
 //The directory containing a CMake configuration file for bond.
 bond_DIR:PATH=/opt/ros/noetic/share/bond/cmake
 
@@ -773,7 +779,7 @@ interactive_markers_DIR:PATH=/opt/ros/noetic/share/interactive_markers/cmake
 laser_geometry_DIR:PATH=/opt/ros/noetic/share/laser_geometry/cmake
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/noetic/lib/librosconsole_bridge.so
+lib:FILEPATH=/opt/ros/noetic/lib/librospack.so
 
 //The directory containing a CMake configuration file for map_msgs.
 map_msgs_DIR:PATH=/opt/ros/noetic/share/map_msgs/cmake
@@ -1063,7 +1069,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=20
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=14
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

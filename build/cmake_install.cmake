@@ -131,16 +131,10 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/pibot/catkin_ws/build/gtest/cmake_install.cmake")
-  include("/home/pibot/catkin_ws/build/imu_tools/imu_tools/cmake_install.cmake")
   include("/home/pibot/catkin_ws/build/JRT_M88B_ros/distance_sensor/cmake_install.cmake")
-  include("/home/pibot/catkin_ws/build/dragandbot_common/dnb_msgs/cmake_install.cmake")
-  include("/home/pibot/catkin_ws/build/adi_driver/cmake_install.cmake")
   include("/home/pibot/catkin_ws/build/pylon-ros-camera/camera_control_msgs/cmake_install.cmake")
   include("/home/pibot/catkin_ws/build/openzenros/cmake_install.cmake")
   include("/home/pibot/catkin_ws/build/pylon-ros-camera/pylon_camera/cmake_install.cmake")
-  include("/home/pibot/catkin_ws/build/imu_tools/imu_complementary_filter/cmake_install.cmake")
-  include("/home/pibot/catkin_ws/build/imu_tools/imu_filter_madgwick/cmake_install.cmake")
-  include("/home/pibot/catkin_ws/build/imu_tools/rviz_imu_plugin/cmake_install.cmake")
 
 endif()
 
