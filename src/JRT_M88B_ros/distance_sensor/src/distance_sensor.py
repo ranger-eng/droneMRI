@@ -3,7 +3,7 @@ import rospy
 from std_msgs.msg import Float32
 from sensor_serial import DistanceSensor
 import os
-
+import time
 
 class DistanceNode:
     def __init__(self):
@@ -15,7 +15,7 @@ class DistanceNode:
         
 
     def assert_port(self):
-        rate = rospy.Rate(0.5)  # 2 hz
+        rate = rospy.Rate(.5)  # 2 hz
         while not rospy.has_param(PARAM_PORT):
             rospy.logwarn("Please assign a value to the port parameter")
             rate.sleep()
@@ -27,9 +27,16 @@ class DistanceNode:
             rospy.logwarn(line)
 
     def stream_distance(self):
+        loop_rate = rospy.Rate(10)
         while True:
+            tic = time.perf_counter_ns()/1000000000
+            loop_rate.sleep()
             distance = self.sensor.read_once()
             self.pub.publish(distance)
+            toc = time.perf_counter_ns()/1000000000
+            dt = toc - tic
+            Fs = 1/dt
+            print("dt: ", dt, ", Fs: ", Fs)
 
 
 if __name__ == '__main__':
