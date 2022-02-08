@@ -4,7 +4,7 @@ import time
 
 
 PORT = "COM4"
-TIMEOUT = .08
+TIMEOUT = 1
 BUFF_SIZE = 1024  # max size of received msg
 
 HEAD = 0xAA  # msgs head
@@ -47,7 +47,7 @@ class DistanceSensor:
         self.ADD_W, self.ADD_R = self.init_sensor()  # write and read addresses
         self.print_info()
 
-        self.CMD_READ_ONCE = self.make_frame(reg=REGS["DIST"], payload_count=1, payload=2)
+        self.CMD_READ_ONCE = self.make_frame(reg=REGS["DIST"], payload_count=1, payload=0)
 
     def read_once(self):
         resp = self.send_msg(self.CMD_READ_ONCE)

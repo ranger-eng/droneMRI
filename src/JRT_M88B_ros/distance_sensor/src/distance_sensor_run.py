@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 import rospy
-from std_msgs.msg import Float32
+from distance_sensor.msg import Float32Stamped
 from sensor_serial import DistanceSensor
 import os
 import time
 
 class DistanceNode:
     def __init__(self):
-        self.pub = rospy.Publisher(OUT_TOPIC, Float32, queue_size=10)
+        self.pub = rospy.Publisher(OUT_TOPIC, Float32Stamped, queue_size=10)
         self.assert_port()  # make sure port is assigned
         self.sensor = DistanceSensor(port=rospy.get_param(PARAM_PORT))
         rospy.on_shutdown(self.sensor.clean)
@@ -30,9 +30,11 @@ class DistanceNode:
         loop_rate = rospy.Rate(10)
         while True:
             tic = time.perf_counter_ns()/1000000000
-            loop_rate.sleep()
-            distance = self.sensor.read_once()
-            self.pub.publish(distance)
+            """loop_rate.sleep()"""
+            msg = Float32Stamped()
+            msg.data = self.sensor.read_once()
+            msg.header.stamp = rospy.Time.now()
+            self.pub.publish(msg)
             toc = time.perf_counter_ns()/1000000000
             dt = toc - tic
             Fs = 1/dt
