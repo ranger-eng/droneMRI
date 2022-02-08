@@ -118,7 +118,9 @@ DEPENDS message_runtime
 include_directories(
 # include
   ${catkin_INCLUDE_DIRS}
+  ${CMAKE_BINARY_DIR}/../devel/include/
 )
+message(STATUS "!!!!!!!${CMAKE_BINARY_DIR}")
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
