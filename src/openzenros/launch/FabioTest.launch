@@ -36,7 +36,7 @@
   
       <!-- remap as you wish -->
     <node pkg="distance_sensor" name="distance_node" type="distance_sensor_run.py">
-          <param name="PORT" value="/dev/ttyUSB0"/>
+          <param name="PORT" value="/dev/ttyUSB1"/>
 
           <remap from="out_topic" to="distance"/>
     </node>
