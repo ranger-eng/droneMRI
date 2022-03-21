@@ -4,6 +4,9 @@ Follow instructions here: https://github.com/basler/pylon-ros-camera
     note: both pylon-ros-camera, and dragandbot_commond  
     https://github.com/dragandbot/dragandbot_common  
 
+The distance sensor node is dependant on pyserial. Install using   
+pip3 install pyserial  
+
 ros noetic needs to be installed on your machine  
 http://wiki.ros.org/noetic/Installation  
 

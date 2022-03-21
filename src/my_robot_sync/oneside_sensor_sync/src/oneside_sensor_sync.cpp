@@ -2,8 +2,8 @@
 #include "sensor_msgs/Imu.h"
 #include "sensor_msgs/MagneticField.h"
 #include "sensor_msgs/Image.h"
-#include "distance_sensor/Float32Stamped.h"
-#include "oneside_sensor_sync/Oneside.h"
+#include "my_robot_messages/Float32Stamped.h"
+#include "my_robot_messages/Oneside.h"
 #include "std_msgs/Float32.h"
 #include "message_filters/subscriber.h"
 #include "message_filters/time_synchronizer.h"
@@ -22,9 +22,9 @@ struct buff_struct {
     float magnetic_field[3][BUFFER_LENGTH] = {0};
 };
 
-void callback(ros::Publisher& pub, const sensor_msgs::ImuConstPtr &imu_ptr, const sensor_msgs::MagneticFieldConstPtr &mag_ptr, const distance_sensor::Float32StampedConstPtr &laser_ptr, const sensor_msgs::ImageConstPtr &img_ptr) {
+void callback(ros::Publisher& pub, const sensor_msgs::ImuConstPtr &imu_ptr, const sensor_msgs::MagneticFieldConstPtr &mag_ptr, const my_robot_messages::Float32StampedConstPtr &laser_ptr, const sensor_msgs::ImageConstPtr &img_ptr) {
     
-    oneside_sensor_sync::Oneside msg;
+    my_robot_messages::Oneside msg;
     
     msg.header.stamp = ros::Time::now();
     msg.header.frame_id = "oneside message with Imu, MagneticField, Image, and Laser Distance.";
@@ -78,6 +78,7 @@ void callback_avg(ros::Publisher& imu_pub, ros::Publisher& mag_pub, struct buff_
     mag_msg.magnetic_field.x = mag_magnetic_field_avg[0]; mag_msg.magnetic_field.y = mag_magnetic_field_avg[1]; mag_msg.magnetic_field.z = mag_magnetic_field_avg[2];
     mag_msg.magnetic_field_covariance = mag->magnetic_field_covariance;
 
+    // publishing
     mag_pub.publish(mag_msg);
     imu_pub.publish(imu_msg);
 
@@ -110,15 +111,15 @@ int main(int argc, char **argv) {
 
 
     // publishers
-    ros::Publisher oneside_pub = n.advertise<oneside_sensor_sync::Oneside>("oneside_syncd", 100);
-    ros::Publisher oneside_avg_pub = n.advertise<oneside_sensor_sync::Oneside>("oneside_avg_syncd", 100);
+    ros::Publisher oneside_pub = n.advertise<my_robot_messages::Oneside>("oneside_syncd", 100);
+    ros::Publisher oneside_avg_pub = n.advertise<my_robot_messages::Oneside>("oneside_avg_syncd", 100);
     ros::Publisher imu_avg_pub = n.advertise<sensor_msgs::Imu>("oneside_syncd/imu_avg", 100);
     ros::Publisher mag_avg_pub = n.advertise<sensor_msgs::MagneticField>("oneside_syncd/mag_avg", 100);
 
     // subscribers when not averaging
     message_filters::Subscriber<sensor_msgs::Imu> imu_sub(n, "/IMU/imu/data", 1);
     message_filters::Subscriber<sensor_msgs::MagneticField> mag_sub(n, "/IMU/imu/mag", 1);
-    message_filters::Subscriber<distance_sensor::Float32Stamped> laser_sub(n, "/Laser/distance", 1);
+    message_filters::Subscriber<my_robot_messages::Float32Stamped> laser_sub(n, "/Laser/distance", 1);
     message_filters::Subscriber<sensor_msgs::Image> img_sub(n, "/camera/left_camera/image_raw", 1);
 
     // subscribers when averaging
@@ -134,12 +135,12 @@ int main(int argc, char **argv) {
     // Approximate time syncronozation takes in mag, imu, laser distance, and image_raw sensor messages and combines them
     // the slowest transmitting sensor dictates the transmission rate as async policy will wait for a complete set of all 4 sensors before transmitting one message.
     //if (mean_option) {
-        typedef sync_policies::ApproximateTime<sensor_msgs::Imu, sensor_msgs::MagneticField, distance_sensor::Float32Stamped, sensor_msgs::Image> MyAsyncPolicy_sync_avg;
+        typedef sync_policies::ApproximateTime<sensor_msgs::Imu, sensor_msgs::MagneticField, my_robot_messages::Float32Stamped, sensor_msgs::Image> MyAsyncPolicy_sync_avg;
         Synchronizer<MyAsyncPolicy_sync_avg> main_sync_avg(MyAsyncPolicy_sync_avg(10), imu_avg_sub, mag_avg_sub, laser_sub, img_sub);
         main_sync_avg.registerCallback(boost::bind(&callback, boost::ref(oneside_avg_pub), _1, _2, _3, _4));
     //}
     //else {
-        typedef sync_policies::ApproximateTime<sensor_msgs::Imu, sensor_msgs::MagneticField, distance_sensor::Float32Stamped, sensor_msgs::Image> MyAsyncPolicy_sync;
+        typedef sync_policies::ApproximateTime<sensor_msgs::Imu, sensor_msgs::MagneticField, my_robot_messages::Float32Stamped, sensor_msgs::Image> MyAsyncPolicy_sync;
         Synchronizer<MyAsyncPolicy_sync> main_sync(MyAsyncPolicy_sync(10), imu_sub, mag_sub, laser_sub, img_sub);
         main_sync.registerCallback(boost::bind(&callback, boost::ref(oneside_pub), _1, _2, _3, _4));
     //}

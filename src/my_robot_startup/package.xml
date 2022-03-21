@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>my_robot_startup</name>
+  <version>0.0.0</version>
+  <description>THis package contains the launch files and startup scripts for the robot.</description>
+
+  <maintainer email="pibot@todo.todo">pibot</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+</package>

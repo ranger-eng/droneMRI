@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import rospy
-from distance_sensor.msg import Float32Stamped
+from my_robot_messages.msg import Float32Stamped
 from sensor_serial import DistanceSensor
 import os
 import time
