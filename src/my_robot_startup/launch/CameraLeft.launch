@@ -26,13 +26,20 @@
     <!-- IG1 Sensor node -->
      <remap from= "imu" to = "IMU_L"/> 
     <node name="left_IMU" pkg="openzen_sensor" type="openzen_sensor_node"/>
-   <!-- <node name="laser_IMU" pkg="openzen_sensor" type="openzen_sensor_node"/> -->
+    
 
-    <!-- Quaternion to Euler conversion node -->
+     
+     
+    <remap from='imu' to= 'IMU_LASER'/>
+      
+    <node name="laser_IMU"  pkg="openzen_sensor" type="openzen_sensor_node" >  
+        <param name= "sensor_name" type="str" value= "IG12329004E002C"/>
+        </node>
+
+  
+      <!-- Quaternion to Euler conversion node -->
     <node name="quat_to_euler" pkg="topic_tools" type="transform"
-        args="IMU_L/data/orientation IMU_L_RPY geometry_msgs/Vector3 'tf.transformations.euler_from_quaternion([m.x, m.y, m.z, m.w])' --import tf" />
-  
-  
+        args="IMU_LASER/data/orientation IMU_LASER_RPY geometry_msgs/Vector3 'tf.transformations.euler_from_quaternion([m.x, m.y, m.z, m.w])' --import tf" />
   
   
   
@@ -42,7 +49,7 @@
   
       <!-- remap as you wish -->
     <node pkg="distance_sensor" name="distance_node" type="distance_sensor_run.py">
-          <param name="PORT" value="/dev/ttyUSB1"/>
+          <param name="PORT" value="/dev/ttyUSB0"/>
 
           <remap from="out_topic" to="DISTANCE"/>
     </node>
