@@ -1,8 +1,8 @@
 <launch>
-  <group ns = "camera">
+  <group ns = "my_robot_driver">
     <arg name="respawn" default="false" />
     <arg name="debug" default="false" />
-    <arg name="node_name" default="left_camera" />
+    <arg name="node_name" default="right_camera" />
     <arg name="mtu_size" default="1500" />
     <arg name="startup_user_set" default="CurrentSetting" />
     <arg name="enable_status_publisher" default="true" />
@@ -20,29 +20,17 @@
         <param name="enable_status_publisher" value="$(arg enable_status_publisher)"/>
         <param name="enable_current_params_publisher" value="$(arg enable_current_params_publisher)"/>
     </node>
-  </group>  
-    <!-- Distance node-->
-  <group ns = "IMU">
-    <!-- IG1 Sensor node -->
-    <node name="left_IMU" pkg="openzen_sensor" type="openzen_sensor_node"/>
-
+ 
+  
+   <!-- IG1 Sensor node -->
+  
+    <remap from= "/imu" to = "/IMU_R"/>
+    <node name="right_IMU" pkg="openzen_sensor" type="openzen_sensor_node"/>
+ </group>  
     <!-- Quaternion to Euler conversion node -->
     <node name="quat_to_euler" pkg="topic_tools" type="transform"
-        args="imu/data/orientation /rpy_angles geometry_msgs/Vector3 'tf.transformations.euler_from_quaternion([m.x, m.y, m.z, m.w])' --import tf" />
+        args="IMU_R/data/orientation /rpy_angles_R geometry_msgs/Vector3 'tf.transformations.euler_from_quaternion([m.x, m.y, m.z, m.w])' --import tf" />
   
-  </group>
-  
-  <group ns = "Laser">
-
-  
-      <!-- remap as you wish -->
-    <node pkg="distance_sensor" name="distance_node" type="distance_sensor_run.py">
-          <param name="PORT" value="/dev/ttyUSB1"/>
-
-          <remap from="out_topic" to="distance"/>
-    </node>
-  </group>   
-
 
 
 </launch>

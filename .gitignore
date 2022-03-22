@@ -1,6 +1,5 @@
 devel/
 src/my_robot_drivers/dragandbot_common/
-src/my_robot_drivers/pylon-ros-camera/
 logs/
 build/
 bin/
