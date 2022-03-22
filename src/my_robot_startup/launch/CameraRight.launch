@@ -2,7 +2,7 @@
   <group ns = "my_robot_driver">
     <arg name="respawn" default="false" />
     <arg name="debug" default="false" />
-    <arg name="node_name" default="right_camera" />
+    <arg name="node_name" default="CAM_R" />
     <arg name="mtu_size" default="1500" />
     <arg name="startup_user_set" default="CurrentSetting" />
     <arg name="enable_status_publisher" default="true" />
@@ -24,13 +24,13 @@
   
    <!-- IG1 Sensor node -->
   
-    <remap from= "/imu" to = "/IMU_R"/>
+    <remap from= "imu" to = "IMU_R"/> 
     <node name="right_IMU" pkg="openzen_sensor" type="openzen_sensor_node"/>
- </group>  
+ 
     <!-- Quaternion to Euler conversion node -->
     <node name="quat_to_euler" pkg="topic_tools" type="transform"
-        args="IMU_R/data/orientation /rpy_angles_R geometry_msgs/Vector3 'tf.transformations.euler_from_quaternion([m.x, m.y, m.z, m.w])' --import tf" />
+        args="IMU_R/data/orientation  IMU_R_RPY geometry_msgs/Vector3 'tf.transformations.euler_from_quaternion([m.x, m.y, m.z, m.w])' --import tf" />
   
-
+ </group> 
 
 </launch>
