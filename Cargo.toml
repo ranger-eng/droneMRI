@@ -1,0 +1,2 @@
+[workspace]
+members = ["src/my_robot_services"]

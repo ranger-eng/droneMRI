@@ -7,6 +7,10 @@ Follow instructions here: https://github.com/basler/pylon-ros-camera
 The distance sensor node is dependant on pyserial. Install using   
 pip3 install pyserial  
 
+The services for this project are written in Rust. Please follow the steps below to install Rust on the machine:
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+rustup update
+
 ros noetic needs to be installed on your machine  
 http://wiki.ros.org/noetic/Installation  
 
