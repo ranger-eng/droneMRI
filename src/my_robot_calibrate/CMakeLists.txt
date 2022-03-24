@@ -1,55 +1,46 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(my_robot_messages)
+project(my_robot_calibrate)
 
 find_package(catkin REQUIRED COMPONENTS
-    std_msgs
-    sensor_msgs
-    message_generation
+  sensor_msgs
+  std_msgs
+  rospy
 )
 
 ################################################
 ## Declare ROS messages, services and actions ##
 ################################################
 
-add_message_files(
-    FILES
-    Float32Stamped.msg
-    Oneside.msg
-    LeftSide.msg
-)
-
-generate_messages(
-    DEPENDENCIES
-    sensor_msgs
-    std_msgs
-)
-
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
 ################################################
 
-
 ###################################
 ## catkin specific configuration ##
 ###################################
-
 catkin_package(
-    DEPENDS message_runtime
+#  INCLUDE_DIRS include
+#  LIBRARIES my_robot_calibrate
+#  CATKIN_DEPENDS dependencies roscpp rospy
+#  DEPENDS system_lib
 )
 
 ###########
 ## Build ##
 ###########
 
-## Specify additional locations of header files
-## Your package locations should be listed before other locations
 include_directories(
-    ${catkin_INCLUDE_DIRS}
+# include
+  ${catkin_INCLUDE_DIRS}
+  ${CMAKE_BINARY_DIR}/../devel/include/
 )
 
 #############
 ## Install ##
 #############
+catkin_install_python(PROGRAMS src/calibrate_main.py
+    DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
 
 #############
 ## Testing ##
