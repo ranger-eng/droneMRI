@@ -1,4 +1,5 @@
 devel/
+*.clangd/
 target/
 Cargo.lock
 src/my_robot_drivers/dragandbot_common/

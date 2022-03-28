@@ -16,6 +16,7 @@ add_message_files(
     Float32Stamped.msg
     Oneside.msg
     LeftSide.msg
+    RightSide.msg
 )
 
 generate_messages(

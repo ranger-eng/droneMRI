@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>oneside_sensor_sync</name>
+  <name>my_robot_sync</name>
   <version>0.0.0</version>
   <description>The oneside_sensor_sync package</description>
 

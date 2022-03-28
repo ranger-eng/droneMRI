@@ -1,0 +1,3 @@
+<launch>
+    <test test-name="bare_bones" pkg="my_robot_startup" type="my_robot_sync_unittest.py"/>
+</launch>
