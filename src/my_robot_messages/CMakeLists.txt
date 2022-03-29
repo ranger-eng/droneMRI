@@ -14,7 +14,6 @@ find_package(catkin REQUIRED COMPONENTS
 add_message_files(
     FILES
     Float32Stamped.msg
-    Oneside.msg
     LeftSide.msg
     RightSide.msg
 )

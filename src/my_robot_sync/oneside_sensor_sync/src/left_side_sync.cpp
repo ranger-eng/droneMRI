@@ -10,7 +10,6 @@
 #include "message_filters/sync_policies/approximate_time.h"
 #define BUFFER_LENGTH 100
 
-using namespace message_filters;
 using namespace std;
 
 my_robot_messages::Float32Stamped laser_msg;
@@ -71,8 +70,8 @@ int main(int argc, char **argv) {
 
     // Approximate time syncronozation takes in mag, imu, laser distance, and image_raw sensor messages and combines them
     // the slowest transmitting sensor dictates the transmission rate as async policy will wait for a complete set of all 4 sensors before transmitting one message.
-    typedef sync_policies::ApproximateTime<sensor_msgs::Imu, sensor_msgs::Imu, sensor_msgs::Image> MyAsyncPolicy_sync;
-    Synchronizer<MyAsyncPolicy_sync> main_sync(MyAsyncPolicy_sync(10), imu_l_sub, imu_laser_sub, img_sub);
+    typedef message_filters::sync_policies::ApproximateTime<sensor_msgs::Imu, sensor_msgs::Imu, sensor_msgs::Image> MyAsyncPolicy_sync;
+    message_filters::Synchronizer<MyAsyncPolicy_sync> main_sync(MyAsyncPolicy_sync(10), imu_l_sub, imu_laser_sub, img_sub);
     main_sync.registerCallback(boost::bind(&callback, boost::ref(oneside_pub), _1, _2, _3));
 
 
