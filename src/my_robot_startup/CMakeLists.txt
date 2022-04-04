@@ -18,7 +18,10 @@ catkin_package()
 #############
 ## Install ##
 #############
-catkin_install_python(PROGRAMS test/my_robot_sync_unittest.py
+catkin_install_python(PROGRAMS 
+    test/my_robot_sync_rightside_unittest.py
+    DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+    test/my_robot_sync_leftside_unittest.py
     DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 

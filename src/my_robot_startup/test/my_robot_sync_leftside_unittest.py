@@ -3,6 +3,7 @@ PKG = 'my_robot_startup'
 import roslib; roslib.load_manifest(PKG)  # This line is not needed with Catkin.
 import rospy
 from my_robot_messages.msg import LeftSide
+from my_robot_messages.msg import RightSide
 
 import sys
 import unittest
@@ -50,7 +51,6 @@ class MyRobotSyncLeft(unittest.TestCase):
         rospy.Subscriber("LeftSide_Pub", LeftSide, self.msg_cb)
         rospy.sleep(rospy.Duration.from_sec(0.5))
         self.assertEqual(self.success, True)
-
 
 if __name__ == '__main__':
     import rostest
