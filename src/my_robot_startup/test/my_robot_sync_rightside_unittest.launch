@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="rosbag" type="play" name="player" output="screen" args="-l /home/ranger/src/droneMRI/src/my_robot_startup/test/data/right_side_short.bag"/>
+    <node name="right_side_sync_node" pkg="my_robot_sync" type="right_side_sync_node" args="-m" />
+    <test test-name="my_robot_sync_right" pkg="my_robot_startup" type="my_robot_sync_rightside_unittest.py"/>
+</launch>
