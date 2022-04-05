@@ -32,8 +32,10 @@ void callback(ros::Publisher& pub, const sensor_msgs::ImuConstPtr &imu_l_ptr, co
     msg.imu_laser = *imu_laser_ptr;
     msg.image_l = *img_ptr;
 
-    cout << "IMU time stamp: " << msg.imu_l.header.stamp << " || " << "IMU LASER time stamp: " << msg.imu_laser.header.stamp << endl;
-    cout << "Laser time stamp: " << msg.laser << " || " << "Image time stamp: " << msg.image_l.header.stamp << endl;
+    cout << "IMU time stamp: " << msg.imu_l.header.stamp << endl;
+    cout << "IMU LASER time stamp: " << msg.imu_laser.header.stamp << endl;
+    cout << "Laser time stamp: " << msg.laser << endl;
+    cout <<  "Image time stamp: " << msg.image_l.header.stamp << endl;
 
     pub.publish(msg);
 }

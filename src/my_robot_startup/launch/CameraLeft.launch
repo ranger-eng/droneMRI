@@ -7,7 +7,7 @@
     <arg name="startup_user_set" default="CurrentSetting" />
     <arg name="enable_status_publisher" default="true" />
     <arg name="enable_current_params_publisher" default="true" />
-    <arg name="config_file" default="$(find pylon_camera)/config/default.yaml" />
+    <arg name="config_file" default="$(find pylon_camera)/config/default_L.yaml" />
 
     <arg unless="$(arg debug)" name="launch_prefix" value="" />
     <arg     if="$(arg debug)" name="launch_prefix" value="gdb -ex run --args" />
@@ -38,18 +38,22 @@
 
   
       <!-- Quaternion to Euler conversion node -->
-    <node name="quat_to_euler" pkg="topic_tools" type="transform"
+    <node name="quat_to_euler_laser" pkg="topic_tools" type="transform"
         args="IMU_LASER/data/orientation IMU_LASER_RPY geometry_msgs/Vector3 'tf.transformations.euler_from_quaternion([m.x, m.y, m.z, m.w])' --import tf" />
   
-  
+        <!-- Quaternion to Euler conversion node -->
+    <node name="quat_to_euler_left" pkg="topic_tools" type="transform"
+        args="IMU_L/data/orientation IMU_L_RPY geometry_msgs/Vector3 'tf.transformations.euler_from_quaternion([m.x, m.y, m.z, m.w])' --import tf" />
   
    <!-- Distance node-->
  
 
   
       <!-- remap as you wish -->
+      <arg name="PORT" default="/dev/ttyUSB0"/>
     <node pkg="distance_sensor" name="distance_node" type="distance_sensor_run.py">
-          <param name="PORT" value="/dev/ttyUSB0"/>
+          
+          <param name="PORT" value="$(arg PORT)"/>
 
           <remap from="out_topic" to="DISTANCE"/>
     </node>
