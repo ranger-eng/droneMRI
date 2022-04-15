@@ -51,7 +51,6 @@
 # The Balance White camera feature allows you to manually correct color shifts so that white objects appear white in images acquired.
 # The increase or decrease in intensity is proportional. For example, if the balance ratio for a color is set to 1.2, the intensity of that color is increased by 20 %.
 # Activating these values will turn off the white_balance_auto.
-#  
  white_balance_ratio_red : 3   #1.0
  white_balance_ratio_green : 3.703125  #1.234375
  white_balance_ratio_blue : 5.15625 #1.71875
